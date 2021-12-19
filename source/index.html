@@ -3,36 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="#">
-        <svg class="header__logo-img" aria-label="Логотип" width="34" height="38">
-          <use xlink:href="#logo-img"></use>
-        </svg>
-        <svg class="header__logo-text" aria-label="Cat Energy" width="101" height="18">
-          <use xlink:href="#logo-text"></use>
-        </svg>
-      </a>
-      <nav class="header__navigation navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--active">
-            <a class="navigation__link navigation__link--current" href="#">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="wrapper header__wrapper">
+        <a class="header__logo" href="#">
+          <svg class="header__logo-img" aria-label="Логотип" width="34" height="38">
+            <use xlink:href="#logo-img"></use>
+          </svg>
+          <svg class="header__logo-text" aria-label="Cat Energy" width="101" height="18">
+            <use xlink:href="#logo-text"></use>
+          </svg>
+        </a>
+        <nav class="header__navigation navigation">
+          <button class="navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="navigation__list display-none">
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link navigation__link--current" href="#">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <h1 class="title">Питание для котов: Cat Energy</h1>
+      <h1 class="visually-hidden">Питание для котов: Cat Energy</h1>
       <section class="program">
         <div class="wrapper">
           <h2 class="program__title title">Функциональное питание для котов</h2>
@@ -45,7 +48,7 @@
         <div class="wrapper">
           <div class="catalogs__card card">
             <h3 class="card__title subtitle">Похудение</h3>
-            <p class="card__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <p class="card__text text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="card__button" href="catalog.html">каталог slim</a>
             <svg class="card__img" aria-label="Худой кот" width="50" height="53">
               <use xlink:href="#cat-slim"></use>
@@ -53,7 +56,7 @@
           </div>
           <div class="catalogs__card card">
             <h3 class="card__title subtitle">Набор массы</h3>
-            <p class="card__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <p class="card__text text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="card__button" href="catalog.html">каталог pro</a>
             <svg class="card__img" aria-label="Упитанный кот" width="67" height="50">
               <use xlink:href="#cat-beefy"></use>
@@ -137,19 +140,19 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="map">
+      <section class=" footer__map map">
         <div class="wrapper">
           <h2 class="visually-hidden">Наши координаты</h2>
-          <div class="map__bunner map-bunner">
-            <p class="map-bunner__text">Приглашаем к сотрудничеству дилеров!</p>
-            <address class="map-bunner__adress">
-              <p class="map-bunner__text">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="map-bunner__text">Санкт-Петербург</p>
+          <div class="map__banner">
+            <p class="map__text">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="map__address">
+              <p class="map__address-text">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="map__address-text">Санкт-Петербург</p>
             </address>
           </div>
-          <div class="map__container map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.178313520637!2d30.318355330736388!3d59.93895923556141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5bee693c3%3A0xd7c6e88d473ce8f1!2sABRAMOV!5e0!3m2!1sru!2sby!4v1638817731386!5m2!1sru!2sby" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
+        </div>
+        <div class="map__container map-container">
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.178313520637!2d30.318355330736388!3d59.93895923556141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5bee693c3%3A0xd7c6e88d473ce8f1!2sABRAMOV!5e0!3m2!1sru!2sby!4v1638817731386!5m2!1sru!2sby" height="362"  allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
       <section class="footer__navigation">
@@ -161,21 +164,21 @@
           <ul class="socials">
             <li class="socials__item">
               <a class="socials__link" href="https://vk.com/htmlacademy">
-                <svg class="socials__img" width="23" height="16">
+                <svg class="socials__img" width="23" height="16" aria-label="Вконтакте">
                   <use xlink:href="#vkontacte"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.instagram.com/htmlacademy">
-                <svg class="socials__img" width="16" height="16">
+                <svg class="socials__img" width="16" height="16" aria-label="Инстаграм">
                   <use xlink:href="#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.facebook.com/htmlacademy">
-                <svg class="socials__img" width="22" height="22">
+                <svg class="socials__img" width="22" height="22" aria-label="Фейсбук">
                   <use xlink:href="#facebook"></use>
                 </svg>
               </a>
@@ -183,7 +186,7 @@
           </ul>
           <a class="academy-logo" href="https://htmlacademy.ru/">
             <p class="academy-logo__text">HTML Academy</p>
-            <svg class="academy-logo__img" width="27" height="34">
+            <svg class="academy-logo__img" width="27" height="34" aria-label="HTML-академия">
               <use xlink:href="#academy-logo"></use>
             </svg>
           </a>
@@ -304,6 +307,11 @@
         <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#666"/>
       </symbol>
     </svg>
+
+    <symbol id ="arrow" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path stroke="#000" stroke-width="2" d="M0 6h18"/>
+      <path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000"/>
+    </symbol>
 
   </body>
 </html>

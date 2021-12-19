@@ -1,1 +1,36 @@
-// Начните писать стили здесь
+//Globals
+
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+
+//Components
+
+//Shared
+
+@import "./components/shared/header.scss";
+@import "./components/shared/footer.scss";
+@import "./components/shared/map.scss";
+@import "./components/shared/socials.scss";
+@import "./components/shared/academy-logo.scss";
+@import "./components/shared/navigation.scss";
+
+//Main-page
+
+@import "./components/index/program.scss";
+@import "./components/index/card.scss";
+
+//Catalog-page
+
+@import "./components/catalog-page/main-catalog.scss";
+@import "./components/catalog-page/catalog-title.scss";
+@import "./components/catalog-page/product.scss";
+@import "./components/catalog-page/additional-product.scss";
+@import "./components/catalog-page/additional-catalog.scss";
+
+
+//Form
+
+@import "./components/fom-page/control.scss";
+@import "./components/fom-page/program-form.scss";
+@import "./components/fom-page/form-text.scss";
