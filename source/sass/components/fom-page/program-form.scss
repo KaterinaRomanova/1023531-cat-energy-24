@@ -16,19 +16,36 @@
   text-transform: uppercase;
 }
 
-.program-form__text {
+.program-form__group {
+  border: none;
   margin: 0;
-  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 23px;
 }
 
 .program-form__group-wrapper {
   margin-bottom: 27px;
 }
 
-.program-form__group {
-  border: none;
+.program-form__input-group {
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.program-form__text {
   margin: 0;
-  padding: 0;
+  margin-right: 13px;
+  text-transform: uppercase;
+}
+
+.program-form__input {
+  flex-grow: 1;
+  margin: 0;
+  box-sizing: border-box;
+  height: 45px;
+  border: none;
+  outline: 1px solid $input-border;
 }
 
 .program-form__list {
@@ -42,15 +59,11 @@
 }
 
 .program-form__legend {
-
-}
-
-.program-form__input {
-
+  margin-bottom: 35px;
 }
 
 .program-form__textarea {
-
+  height: 280px;
 }
 
 .program-form__button {
