@@ -1,0 +1,16 @@
+.academy-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.academy-logo__text {
+  font-size: 16px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.academy-logo__img {
+  vertical-align: middle;
+}

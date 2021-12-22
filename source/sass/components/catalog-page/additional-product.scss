@@ -1,0 +1,39 @@
+.additional-product {
+  padding: 13px 0 19px;
+  border-top: 1px solid $special-line-color;
+
+  &:last-child {
+    border-bottom: 1px solid $special-line-color;
+  }
+}
+
+.additional-product__title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  color: $text-dark-color;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.additional-product__feature-group {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  color: $text-color;
+  line-height: 1;
+  list-style: none;
+}
+
+.additional-product__feature {
+
+}
+
+.additional-product__feature-value {
+
+}

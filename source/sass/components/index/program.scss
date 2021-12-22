@@ -1,0 +1,25 @@
+.program {
+  color: $basic-white-color;
+  background: url("./../img/background-mobile.png") no-repeat center 0;
+}
+
+.program__title {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.program__text {
+  margin: 0;
+  margin-bottom: 29px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.program__img {
+  display: block;
+  margin: auto;
+}
+
+.program__button {
+
+}
