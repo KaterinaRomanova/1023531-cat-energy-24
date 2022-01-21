@@ -3,29 +3,73 @@
 }
 
 .navigation__toggle {
-
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__list {
   position: absolute;
+  top: 66px;
   left: 0;
   margin: 0;
   padding: 0;
   list-style: none;
   width: 100%;
   background: $basic-white-color;
+  z-index: 2;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: right;
+  }
 }
 
 .navigation__item {
+  border-bottom: 1px solid $border-menu-color;
 
+  &:first-child {
+    border-top: 1px solid $border-menu-color;
+  }
 
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-left: 36px;
+
+    &:first-child {
+      border: none;
+    }
+  }
 }
 
 .navigation__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $basic-black-color;
+  text-align: center;
+  text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
 
-  //только для медиа-запроса
-  &--current {
+    &--current {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $basic-elements-color;
+    }
+  }
+}
 
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    position: relative;
   }
 }

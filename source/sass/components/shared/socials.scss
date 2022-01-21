@@ -1,10 +1,23 @@
 .socials {
   margin: 0;
-  margin-bottom: 22px;
-  padding: 20px 77px 20px 73px;
+  margin-bottom: 14px;
+  padding: 20px 77px 15px 73px;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  border-bottom: 1px solid;
-  border-top: 1px solid;
+  border-bottom: 1px solid $border-card-color;
+  border-top: 1px solid $border-card-color;
 }
+
+.socials__item {
+
+}
+
+.socials__link {
+
+}
+
+.socials__img {
+
+}
+
