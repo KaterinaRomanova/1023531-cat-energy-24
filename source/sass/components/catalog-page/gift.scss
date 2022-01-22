@@ -1,0 +1,21 @@
+.gift {
+  margin: 35px 0;
+  width: 100%;
+  height: 290px;
+  position: relative;
+  background: url("../../../img/cat-gift.png") no-repeat;
+  background-size: cover;
+  color: $basic-white-color;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #68b738;
+    opacity: 0.85;
+  }
+}

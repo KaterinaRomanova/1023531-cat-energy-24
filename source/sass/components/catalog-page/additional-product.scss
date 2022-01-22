@@ -1,5 +1,5 @@
 .additional-product {
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
   border-top: 1px solid $special-line-color;
 
   &:last-child {
@@ -9,7 +9,8 @@
 
 .additional-product__title {
   margin: 0;
-  margin-bottom: 18px;
+  margin-left: 2px;
+  margin-bottom: 12px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   color: $text-dark-color;
@@ -19,7 +20,7 @@
 
 .additional-product__feature-group {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -36,4 +37,9 @@
 
 .additional-product__feature-value {
 
+}
+
+.additional-product__button {
+  font-size: 16px;
+  line-height: 20px;
 }
