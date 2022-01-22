@@ -1,15 +1,22 @@
-
 .header {
-
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  margin: 10px auto 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
 }
 
 .header__logo {
-
+  width: 191px;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
 }
 
 .header__logo-img{
@@ -17,7 +24,7 @@
 }
 
 .header__logo-text{
-
+  margin-top: 5px;
 }
 
 .header__navigation{

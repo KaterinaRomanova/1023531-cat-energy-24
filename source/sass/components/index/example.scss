@@ -1,0 +1,139 @@
+.example {
+  padding: 25px 0 40px;
+  background-color: $bg-color;
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__text-info {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__title {
+  margin-bottom: 44px;
+}
+
+.example__text {
+  margin-bottom: 19px;
+}
+
+.example__statistic {
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.example__list {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
+}
+
+.example__item {
+  position: relative;
+  list-style: none;
+}
+
+.example__value {
+  width: 122px;
+  height: 54px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  border: 1px solid $special-line-color;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    height: 70px;
+  }
+}
+
+.example__description {
+  position: absolute;
+  top: 46px;
+  left: 7px;
+  margin: 0;
+  padding: 0 20px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  color: $text-color;
+  background-color: $bg-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.example__price-info {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 63px;
+    justify-content: start;
+  }
+}
+
+.example__price-title {
+  margin: 0;
+}
+
+.example__price-number {
+  margin: 0;
+}
+
+.example__img-info {
+
+}
+
+.example__img {
+
+}
+
+
+.example__range {
+
+}
+

@@ -1,22 +1,44 @@
 .card {
-  padding: 30px 33px  18px 20px;
+  margin-bottom: 20px;
+  padding: 29px 20px 18px;
   position: relative;
+  background-color: $basic-gray-color;
+
+  @media (min-width: $desktop-width) {
+    width: 530px;
+  }
 }
 
 .card__title {
   margin-bottom: 29px;
+  margin-left: 71px;
+  text-transform: uppercase;
 }
 
 .card__text {
-  padding-bottom: 23px;
+  padding-bottom: 22px;
   margin-bottom: 15px;
-  border-bottom: 1px solid;
+  color: $text-color;
+  border-bottom: 1px solid $border-card-color;
 }
 
 .card__button {
+  margin-left: -1px;
+  color: $text-dark-color;
+  text-transform: uppercase;
   background: url("../././img/index/arrow.svg") no-repeat;
 }
 
 .card__img {
   position: absolute;
+}
+
+.card__img--beefy {
+  top: 24px;
+  left: 13px;
+}
+
+.card__img--slim {
+  top: 20px;
+  left: 22px;
 }

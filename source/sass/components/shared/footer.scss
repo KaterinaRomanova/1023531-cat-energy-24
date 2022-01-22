@@ -1,17 +1,35 @@
 .footer {
-
+  background: $basic-gray-color;
 }
 
 .footer__map {
-  margin-bottom: 39px;
+
 }
 
 .footer__navigation {
+  padding: 34px 0 24px;
 
+  @media (min-width: $tablet-width) {
+    padding: 31px 0 24px;
+  }
 }
 
 .footer__logo {
-  display: block;
-  margin: auto;
-  margin-bottom: 32px;
+  align-self: center;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer__wrapper-navigation {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
