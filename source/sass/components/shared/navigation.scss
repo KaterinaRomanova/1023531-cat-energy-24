@@ -43,6 +43,10 @@
       border: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 35px;
+  }
 }
 
 .navigation__link {
@@ -66,10 +70,15 @@
       border-bottom: 2px solid $basic-elements-color;
     }
   }
-}
 
-@media (min-width: $tablet-width) {
-  .navigation__list {
-    position: relative;
+  @media (min-width: $tablet-width) {
+    &--current {
+      padding-bottom: 6px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

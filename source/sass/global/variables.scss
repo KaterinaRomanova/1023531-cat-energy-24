@@ -2,6 +2,7 @@
 $basic-elements-color: #68b738;
 $basic-element-active-color: #5eaa2f;
 $basic-white-color:#ffffff;
+$transparent-white-color:rgba(255, 255, 255, 0.3);
 $basic-black-color: #000000;
 $basic-gray-color: #f2f2f2;
 $text-color:#444444;
@@ -12,16 +13,14 @@ $bg-color: #eaeaea;
 $input-border: #e7e7e7;
 $border-menu-color:#e6e6e6;
 $border-card-color:#d9d9d9;
+$border-catalog-color: #ebebeb;
 
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
 
 // /* Color styles */
-// --special_grey-2: #EBEBEB;
 // --special_grey-2: #666666;
-// --special_dark-grey: #444444;
-// --special_dark-grey-2: #222222;
 
 // /* Effect styles */
 // --shadow_normal:  0px 1px 3px rgba(0, 0, 0, 0.16);

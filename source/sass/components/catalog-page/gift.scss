@@ -1,0 +1,59 @@
+.gift {
+  margin: 35px 0;
+  padding: 59px 58px 40px;
+  width: 100%;
+  min-height: 290px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 49px;
+  background: url("../../../img/cat-gift-bg.png") no-repeat;
+  background-size: cover;
+  color: $basic-white-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 69px 0 76px;
+    padding: 35px 124px 40px 79px;
+    min-height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 55px 43px 42px 41px;
+    width: 245px;
+    height: 288px;//
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 41px;
+    align-items: center;
+  }
+}
+
+.gift__img {
+  width: 78px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 6px;
+  }
+}
+
+.gift__title {
+  margin: 0;
+  width: 161px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}

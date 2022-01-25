@@ -58,6 +58,11 @@ a {
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
 }
 
 .text {
@@ -87,9 +92,22 @@ a {
   border: none;
   cursor: pointer;
 
+  &:hover {
+    background-color: $basic-element-active-color;
+  }
+
+  &:active {
+    background-color: $basic-element-active-color;
+    color: $transparent-white-color;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 17px 26px;
     font-size: 20px;
     line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
