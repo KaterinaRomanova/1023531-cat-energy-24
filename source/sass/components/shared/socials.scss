@@ -7,9 +7,19 @@
   list-style: none;
   border-bottom: 1px solid $border-card-color;
   border-top: 1px solid $border-card-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    gap: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
 .socials__item {
+
 
 }
 

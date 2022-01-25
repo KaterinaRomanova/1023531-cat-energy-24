@@ -21,70 +21,70 @@
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="navigation__list display-none">
+          <ul class="navigation__list ">
             <li class="navigation__item navigation__item--current">
-              <a class="navigation__link navigation__link--current" href="#">Главная</a>
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Подбор программы</a>
+              <a class="navigation__link navigation__link--current" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="wrapper">
-        <form class="program-form" action="https://echo.htmlacademy.ru">
-          <h1 class="program-form__title title">Подбор программы</h1>
-          <p class="program-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <div class="program-form__group-wrapper">
-            <fieldset class="program-form__group">
-              <legend class="visually-hidden">Личные данные</legend>
-              <div class="program-form__input-group">
-                <label class="program-form__text" for="name">Имя:*</label>
-                <input class="program-form__input" type="text" name="name" id="name" placeholder="Барсик" required>
-              </div>
-              <div class="program-form__input-group"">
-                <label class="program-form__text" for="weight">Вес (кг):*</label>
-                <input class="program-form__input" type="text" name="weight" id="weight" placeholder="7" required>
-              </div>
-              <div class="program-form__input-group"">
-                <label class="program-form__text" for="age">Возраст (лет):</label>
-                <input class="program-form__input" type="text" name="age" id="age" placeholder="7">
-              </div>
-            </fieldset>
-            <fieldset class="program-form__group">
-              <legend class="visually-hidden">Вид программы</legend>
-              <ul class="program-form__list">
-                <li class="program-form__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="product-group" value="shaving-supplies" checked="">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Похудение</span>
-                  </label>
-                </li>
-                <li class="program-form__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="product-group" value="shaving-supplies" checked="">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Набор массы</span>
-                  </label>
-                </li>
-                <li class="program-form__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" type="radio" name="product-group" value="shaving-supplies" checked="">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
-          <fieldset class="program-form__group contact-group">
-            <legend class="program-form__legend subtitle">Контактные данные (владельца кота)</legend>
+      <form class="program-form" action="https://echo.htmlacademy.ru">
+        <h1 class="program-form__title title">Подбор программы</h1>
+        <p class="program-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="program-form__group-wrapper">
+          <fieldset class="program-form__group">
+            <legend class="visually-hidden">Личные данные</legend>
+            <div class="program-form__input-group">
+              <label class="program-form__text" for="name">Имя:*</label>
+              <input class="program-form__input" type="text" name="name" id="name" placeholder="Барсик" required>
+            </div>
+            <div class="program-form__input-group"">
+              <label class="program-form__text" for="weight">Вес (кг):*</label>
+              <input class="program-form__input" type="text" name="weight" id="weight" placeholder="7" required>
+            </div>
+            <div class="program-form__input-group"">
+              <label class="program-form__text" for="age">Возраст (лет):</label>
+              <input class="program-form__input" type="text" name="age" id="age" placeholder="7">
+            </div>
+          </fieldset>
+          <fieldset class="program-form__group program-form__group--bordered">
+            <legend class="visually-hidden">Вид программы</legend>
+            <ul class="program-form__list-radio">
+              <li class="program-form__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="product-group" value="shaving-supplies" checked="">
+                  <span class="control__mark control__mark--rounded"></span>
+                  <span class="control__label">Похудение</span>
+                </label>
+              </li>
+              <li class="program-form__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="product-group" value="shaving-supplies" checked="">
+                  <span class="control__mark control__mark--rounded"></span>
+                  <span class="control__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="program-form__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="product-group" value="shaving-supplies" checked="">
+                  <span class="control__mark control__mark--rounded"></span>
+                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="program-form__group contact-group">
+          <legend class="program-form__legend subtitle">Контактные данные (владельца кота)</legend>
+          <div class="program-form__contact-wrapper">
             <div class="program-form__input-group">
               <label class="program-form__text" for="email">E-mail:*</label>
               <input class="program-form__input program-form__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -93,64 +93,64 @@
               <label class="program-form__text" for="phone">Телефон:*</label>
               <input class="program-form__input program-form__input--tel" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
             </div>
-          </fieldset>
-          <fieldset class="program-form__group">
-            <legend class="program-form__legend subtitle">Комментарий</legend>
-            <textarea class="program-form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
-          <fieldset class="program-form__group">
-            <legend class="program-form__legend subtitle">Дополнительно</legend>
-            <ul class="program-form__list">
-              <li class="program-form__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="homme-deep-cleansing-cool">
-                  <span class="control__mark">
-                    <svg class="control__mark-svg hidden" width="19" height="15" role="img" aria-label="Галочка.">
-                      <use xlink:href="#checkbox-mark"></use>
-                    </svg>
-                  </span>
-                  <span class="control__label">Cахарозаменитель</span>
-                </label>
-              </li>
-              <li class="program-form__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="homme-deep-cleansing-cool">
-                  <span class="control__mark">
-                    <svg class="control__mark-svg hidden" width="19" height="15" role="img" aria-label="Галочка.">
-                      <use xlink:href="#checkbox-mark"></use>
-                    </svg>
-                  </span>
-                  <span class="control__label">Питьевая вода</span>
-                </label>
-              </li>
-              <li class="program-form__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="homme-deep-cleansing-cool">
-                  <span class="control__mark">
-                    <svg class="control__mark-svg hidden" width="19" height="15" role="img" aria-label="Галочка.">
-                      <use xlink:href="#checkbox-mark"></use>
-                    </svg>
-                  </span>
-                  <span class="control__label">Молоко</span>
-                </label>
-              </li>
-              <li class="program-form__item">
-                <label class="control">
-                  <input class="visually-hidden control__input" type="checkbox" name="homme-deep-cleansing-cool">
-                  <span class="control__mark">
-                    <svg class="control__mark-svg hidden" width="19" height="15" role="img" aria-label="Галочка.">
-                      <use xlink:href="#checkbox-mark"></use>
-                    </svg>
-                  </span>
-                  <span class="control__label">Витамины</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button program-form__button" type="submit">отправить заявку</button>
-          <small class="program-form__note">* — Обязательные поля</small>
-        </form>
-      </div>
+          </div>
+        </fieldset>
+        <fieldset class="program-form__group program-form__group--textarea">
+          <legend class="program-form__legend subtitle">Комментарий</legend>
+          <textarea class="program-form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="program-form__group">
+          <legend class="program-form__legend subtitle">Дополнительно</legend>
+          <ul class="program-form__list-checkbox">
+            <li class="program-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="homme-deep-cleansing-cool">
+                <span class="control__mark">
+                  <svg class="control__mark-svg hidden" width="19" height="15" role="img" aria-label="Галочка.">
+                    <use xlink:href="#checkbox-mark"></use>
+                  </svg>
+                </span>
+                <span class="control__label">Cахарозаменитель</span>
+              </label>
+            </li>
+            <li class="program-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="homme-deep-cleansing-cool">
+                <span class="control__mark">
+                  <svg class="control__mark-svg hidden" width="19" height="15" role="img" aria-label="Галочка.">
+                    <use xlink:href="#checkbox-mark"></use>
+                  </svg>
+                </span>
+                <span class="control__label">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="program-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="homme-deep-cleansing-cool">
+                <span class="control__mark">
+                  <svg class="control__mark-svg hidden" width="19" height="15" role="img" aria-label="Галочка.">
+                    <use xlink:href="#checkbox-mark"></use>
+                  </svg>
+                </span>
+                <span class="control__label">Молоко</span>
+              </label>
+            </li>
+            <li class="program-form__item">
+              <label class="control">
+                <input class="visually-hidden control__input" type="checkbox" name="homme-deep-cleansing-cool">
+                <span class="control__mark">
+                  <svg class="control__mark-svg hidden" width="19" height="15" role="img" aria-label="Галочка.">
+                    <use xlink:href="#checkbox-mark"></use>
+                  </svg>
+                </span>
+                <span class="control__label">Витамины</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button program-form__button" type="submit">отправить заявку</button>
+        <small class="program-form__note">* — Обязательные поля</small>
+      </form>
     </main>
     <footer class="footer">
       <section class=" footer__map map">
@@ -171,9 +171,11 @@
       <section class="footer__navigation">
         <div class="wrapper">
           <h2 class="visually-hidden">Навигация</h2>
-          <svg class="footer__logo" width="128" height="24">
-            <use xlink:href="#logo-text"></use>
-          </svg>
+          <a class="footer__link" href="#">
+            <svg class="footer__logo" width="128" height="24">
+              <use xlink:href="#logo-text"></use>
+            </svg>
+          </a>
           <ul class="socials">
             <li class="socials__item">
               <a class="socials__link" href="https://vk.com/htmlacademy">
@@ -208,7 +210,7 @@
     </footer>
 
 
-    <!-- <svg class="display-none">
+    <svg class="display-none">
       <symbol id="logo-img" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#a)">
           <path d="M6.07 20.72v-2.26c6.68-.92 13.42-1.36 20.17-1.33 0 .6 0 1.21-.06 1.82a25.52 25.52 0 0 1 6-1.82A16.67 16.67 0 0 0 .19 20.39l5.88.33ZM27.24 24.23c-1.16 1.28-1.39 1.2-1.39 3.45v9.18A16.64 16.64 0 0 0 33.32 23a17.3 17.3 0 0 0-.32-3.1 33.1 33.1 0 0 0-5.76 4.33ZM6.36 25.72s-3.79-1.44-5.19-1.83A8.54 8.54 0 0 0 0 23.61a16.65 16.65 0 0 0 8.68 14L6.36 25.72Z" fill="#FDC305"/>
@@ -324,7 +326,7 @@
       <symbol id="checkbox-mark" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M7 11.72 1.3 5.27.25 6.46 7 14.09 18.25 1.37 17.2.09 7 11.72Z" fill="#68B738"/>
       </symbol>
-    </svg> -->
+    </svg>
 
   </body>
 </html>
