@@ -98,7 +98,7 @@ a {
 
   &:active {
     background-color: $basic-element-active-color;
-    color: $transparent-white-color;
+    color: transparentize($basic-white-color, 0.3);
   }
 
   @media (min-width: $tablet-width) {

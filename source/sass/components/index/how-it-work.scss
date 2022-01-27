@@ -1,10 +1,18 @@
 .how-it-work {
-  padding-bottom: 49px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $border-menu-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .how-it-work__title {
-  margin-bottom: 42px;
-  padding-top: 3px;
+  margin-bottom: 41px;
+  padding-top: 2px;
 }
 
 .how-it-work__list {
@@ -22,27 +30,20 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     gap: 94px;
-
   }
 }
 
 .how-it-work__item {
+  position: relative;
   display: flex;
+  flex-direction: row;
 
   @media (min-width: $tablet-width) {
-    // height: 280px;
+    min-width: 246px;
+    min-height: 280px;
+    flex-direction: column;
   }
-
 }
-
-// .how-it-work__img-wrapper {
-//   width: 60px;
-//   height: 60px;
-//   background-color: $basic-elements-color;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
 
 .how-it-work__img {
   flex: none;
@@ -61,4 +62,24 @@
 .how-it-work__text {
   color: $text-color;
   margin-top: 3px;
+}
+
+.how-it-work__number {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 280px;
+  line-height: 1;
+  font-weight: 400;
+  color: $basic-gray-color;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
