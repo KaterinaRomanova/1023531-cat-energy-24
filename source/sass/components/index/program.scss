@@ -1,10 +1,10 @@
 .program {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding-top: 27px;
   position: relative;
   color: $basic-white-color;
   background: url("./../img/background-mobile.png") no-repeat center 0;
-  background-size: 100% 300px;
+  background-size: 100% 301px;
 
   &::before {
     content: "";
@@ -12,7 +12,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 300px;
+    height: 301px;
     left: 0;
     background-color: $basic-elements-color;
     opacity: 0.85;
@@ -60,7 +60,7 @@
 .program__img {
   display: block;
   margin: auto;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .program__button {

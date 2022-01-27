@@ -17,7 +17,7 @@
             <use xlink:href="#logo-text"></use>
           </svg>
         </a>
-        <nav class="header__navigation navigation">
+        <nav class="header__navigation navigation navigation--closed">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -322,7 +322,7 @@
           </div>
         </div>
         <div class="map__container map-container">
-          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.178313520637!2d30.318355330736388!3d59.93895923556141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5bee693c3%3A0xd7c6e88d473ce8f1!2sABRAMOV!5e0!3m2!1sru!2sby!4v1638817731386!5m2!1sru!2sby" height="362"  allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.178313520637!2d30.318355330736388!3d59.93895923556141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5bee693c3%3A0xd7c6e88d473ce8f1!2sABRAMOV!5e0!3m2!1sru!2sby!4v1638817731386!5m2!1sru!2sby" height="362"  allowfullscreen="" loading="lazy"  title="Карта."></iframe>
         </div>
       </section>
       <section class="footer__navigation">
@@ -489,5 +489,19 @@
         <path stroke="#D3D3D3" stroke-width="2" d="M15 0v30M30 15H0"/>
       </symbol>
     </svg>
+
+    <script>
+      const nav = document.querySelector('.navigation');
+      const navToggle = document.querySelector('.navigation__toggle');
+      navToggle.addEventListener('click', function(){
+        if(nav.classList.contains('navigation--closed')){
+          nav.classList.remove('navigation--closed');
+          nav.classList.add('navigation--opened');
+        }else{
+          nav.classList.remove('navigation--opened');
+          nav.classList.add('navigation--closed');
+        }
+      })
+    </script>
   </body>
 </html>

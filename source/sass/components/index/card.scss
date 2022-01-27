@@ -1,11 +1,15 @@
 .card {
   margin-bottom: 20px;
-  padding: 29px 20px 18px;
+  padding: 29px 20px 14px;
   position: relative;
   background-color: $basic-gray-color;
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 53px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 530px;
+    width: 466px;
   }
 }
 
@@ -13,20 +17,62 @@
   margin-bottom: 29px;
   margin-left: 71px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 530px;
+  }
 }
 
 .card__text {
   padding-bottom: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   color: $text-color;
   border-bottom: 1px solid $border-card-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-height: 148px;
+  }
 }
 
 .card__button {
+  padding: 4px 41px 4px 0;
   margin-left: -1px;
+  position: relative;
+  display: block;
   color: $text-dark-color;
   text-transform: uppercase;
-  background: url("../././img/index/arrow.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding: 4px 55px 4px 0;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.card__button-img {
+  position: absolute;
+  top: 11px;
+  left: 100px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 12px;
+    left: 134px;
+  }
 }
 
 .card__img {

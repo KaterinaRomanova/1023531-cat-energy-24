@@ -8,6 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 1216px;
     padding: 0 112px;
   }
 }
@@ -28,7 +30,6 @@
 .program-form__subtitle {
   margin: 0;
   padding: 0 20px 40px;
-  width: 226px;
   font-size: 14px;
   line-height: 1.3;
   text-transform: uppercase;
@@ -36,7 +37,6 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-bottom: 66px;
-    width: 323px;
     font-size: 20px;
     line-height: 30px;
   }
