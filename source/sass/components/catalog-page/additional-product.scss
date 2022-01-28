@@ -24,11 +24,16 @@
 
     &:last-child {
       border-bottom: 1px solid $special-line-color;
+      border-top: 1px solid $special-line-color;
     }
 
     &:first-child {
       border-top: 1px solid $special-line-color;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 16px;
   }
 }
 
@@ -40,7 +45,9 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    margin: 0;
+    flex-grow: 1;
+    align-items: center;
   }
 }
 
@@ -86,12 +93,15 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    margin-top: 8px;
   }
 }
 
 .additional-product__feature {
-
+  @media (min-width: $desktop-width) {
+    min-width: 231px;
+    text-align: start;
+  }
 }
 
 .additional-product__feature-value {
@@ -104,7 +114,8 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    min-width: 82px;
+    text-align: start;
   }
 }
 
@@ -117,6 +128,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    min-width: 192px;
   }
 }

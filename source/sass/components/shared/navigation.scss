@@ -122,16 +122,10 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
+    padding-bottom: 6px;
 
     &--current {
-      padding-bottom: 8px;
       border-bottom: 2px solid $basic-elements-color;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    &--current {
-      padding-bottom: 6px;
     }
   }
 
@@ -139,7 +133,7 @@
     font-size: 20px;
     line-height: 30px;
 
-    &--current {
+    &--current-white {
       border-bottom: 2px solid $basic-white-color;
     }
   }
