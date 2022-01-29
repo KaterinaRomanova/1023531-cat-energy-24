@@ -2,14 +2,20 @@
   margin: 0;
   padding-left: 45px;
   position: relative;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding-left: 61px;
   }
 }
 
-.control__input {
+.control:hover .control__mark {
+  border: 1px solid $hover-element-color;
+}
 
+.control__input:disabled ~ .control__label,
+.control__input:disabled ~ .control__mark {
+  opacity: 0.3;
 }
 
 .control__input[type="radio"]:checked + .control__mark::before {

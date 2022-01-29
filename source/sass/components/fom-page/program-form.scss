@@ -152,6 +152,18 @@
     text-transform: uppercase;
   }
 
+  &:hover {
+    outline: 1px solid $special-line-color;
+  }
+
+  &:focus {
+    outline: 2px solid $text-color;
+  }
+
+  &:invalid {
+    outline: 2px solid $status-error-color;
+  }
+
   @media (min-width: $tablet-width) {
     height: 50px;
 
@@ -211,6 +223,7 @@
   flex-grow: 1;
   height: 280px;
   padding: 8px 13px;
+  resize: none;
 
   &::placeholder {
     font-family: "Oswald", "Arial", sans-serif;

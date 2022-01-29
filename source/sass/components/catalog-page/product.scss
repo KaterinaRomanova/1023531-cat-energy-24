@@ -151,6 +151,14 @@
     align-self: normal;
     color: $text-color;
     background-color: $basic-gray-color;
+
+    &:hover {
+      background-color: $border-catalog-color;
+    }
+
+    &:active {
+      color: transparentize($text-color, 0.3);
+    }
   }
 
   @media (min-width: $tablet-width) {
