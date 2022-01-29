@@ -20,6 +20,8 @@
     background: linear-gradient(transparent 81px, $basic-gray-color 81px);
 
     &--additional {
+      min-height: 430px;
+      margin-top: 81px;
       background: transparent;
       border: 2px solid $basic-gray-color;
     }
@@ -28,11 +30,6 @@
   @media (min-width: $desktop-width) {
     padding: 8px 37px 39px 39px;
     width: 245px;
-
-    &--additional {
-      min-height: 431px;
-      margin-top: 81px;
-    }
   }
 }
 
@@ -42,7 +39,7 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 24px;
     flex-direction: column;
     align-items: center;
   }
@@ -67,6 +64,7 @@
   width: 50%;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,6 +80,14 @@
     margin-bottom: 9px;
     width: auto;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 144px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .product__title {
@@ -91,6 +97,16 @@
   line-height: 20px;
   color: $text-dark-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .product__features {
@@ -107,6 +123,8 @@
   color: $text-color;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+    padding-bottom: 6px;
     border-bottom: 1px solid $special-line-color;
     font-size: 16px;
   }
@@ -133,6 +151,14 @@
     align-self: normal;
     color: $text-color;
     background-color: $basic-gray-color;
+
+    &:hover {
+      background-color: $border-catalog-color;
+    }
+
+    &:active {
+      color: transparentize($text-color, 0.3);
+    }
   }
 
   @media (min-width: $tablet-width) {

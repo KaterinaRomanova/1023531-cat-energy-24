@@ -8,7 +8,9 @@
   flex-direction: column;
   align-items: center;
   gap: 49px;
-  background: url("../../../img/cat-gift-bg.png") no-repeat;
+  background-color: $basic-element-active-color;
+  background-image: url("../../../img/cat-gift-bg.png");
+  background-repeat: no-repeat;
   background-size: cover;
   color: $basic-white-color;
 
