@@ -9,12 +9,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 39px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 63px 80px;
-    padding: 0;
+    gap: 57px 80px;
   }
 }
 

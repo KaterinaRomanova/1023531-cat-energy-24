@@ -1,13 +1,30 @@
 .range {
   display: flex;
+  justify-content: center;
 }
 
 .range__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 
+  &:hover {
+    border-bottom: 1px solid transparentize($basic-black-color, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted transparentize($basic-black-color, 0.3);
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .range__scale {
-
+  padding: 0 12px;
 }
 
 .range__bar {
