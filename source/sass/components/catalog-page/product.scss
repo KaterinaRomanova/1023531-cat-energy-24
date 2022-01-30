@@ -17,7 +17,7 @@
     width: 324px;
     min-height: 511px;
     border: none;
-    background-color: linear-gradient(transparent 102px, $basic-gray-color 102px);
+    background: linear-gradient(transparent 102px, $basic-gray-color 102px);
 
     &--additional {
       margin-top: 103px;
@@ -31,7 +31,7 @@
   @media (min-width: $desktop-width) {
     padding: 8px 37px 39px 39px;
     width: 245px;
-    background-color: linear-gradient(transparent 87px, #f2f2f2 87px);
+    background: linear-gradient(transparent 87px, #f2f2f2 87px);
 
     &--additional {
       padding: 49px 37px 38px;
@@ -58,13 +58,15 @@
 }
 
 .product__link-img {
-  margin-bottom: 28px;
+  margin-bottom: 0;
 
   &--additional {
     margin-bottom: 18px;
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+
     &--additional {
       margin-bottom: 45px;
     }

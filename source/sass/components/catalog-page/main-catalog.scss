@@ -22,7 +22,7 @@
 }
 
 .main-catalog__wrapper {
-  @media (max-width: $tablet-width) {
-    padding: 30px;
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
   }
 }

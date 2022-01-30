@@ -9,24 +9,33 @@
   align-items: center;
   gap: 49px;
   background-color: $basic-element-active-color;
-  background-image: url("../../../img/cat-gift-bg.png");
+  background-image: url("../../../img/catalog/gift-mobile-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: $basic-white-color;
 
-  @media (min-width: $tablet-width) {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../img/catalog/gift-mobile-desktop@2x.png");
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-finish) {
     margin: 69px 0 76px;
     padding: 35px 124px 40px 79px;
     min-height: 200px;
     flex-direction: row;
     justify-content: space-between;
+    background-image: url("../../../img/catalog/gift-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/catalog/gift-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 55px 43px 42px 41px;
     width: 245px;
-    height: 288px;//
+    height: 288px;
     box-sizing: border-box;
     flex-direction: column;
     gap: 41px;

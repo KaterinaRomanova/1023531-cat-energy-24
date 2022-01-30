@@ -8,10 +8,10 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="imag/favicons/apple.png">
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--absolute">
       <div class="wrapper header__wrapper">
         <a class="header__logo" href="#">
           <picture>
@@ -29,13 +29,13 @@
           </button>
           <ul class="navigation__list ">
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current navigation__link--current-white" href="#">Главная</a>
+              <a class="navigation__link navigation__link--current navigation__link--white" href="#">Главная</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+              <a class="navigation__link navigation__link--white" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Подбор программы</a>
+              <a class="navigation__link navigation__link--white" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -43,7 +43,7 @@
     </header>
     <main>
       <h1 class="visually-hidden">Питание для котов: Cat Energy</h1>
-      <section class="program">
+      <section class="program program--top">
         <div class="wrapper program__wrapper">
           <h2 class="program__title title">Функциональное питание для котов</h2>
           <p class="program__text">Занялся собой? Займись котом!</p>
@@ -58,27 +58,31 @@
       <section class="catalogs">
         <div class="wrapper catalogs__wrapper">
           <div class="catalogs__card card">
-            <h3 class="card__title subtitle">Похудение</h3>
-            <p class="card__text text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="card__button" href="catalog.html">
-              каталог slim
-              <svg class="card__button-img" aria-label="Стрелка." width="24" height="12">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </a>
+            <div class="card__text-wrapper">
+              <h3 class="card__title subtitle">Похудение</h3>
+              <p class="card__text text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="card__button" href="catalog.html">
+                каталог slim
+                <svg class="card__button-img" aria-label="Стрелка." width="24" height="12">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
             <svg class="card__img card__img--slim" aria-label="Худой кот." width="50" height="53">
               <use xlink:href="img/sprite.svg#cat-slim"></use>
             </svg>
           </div>
           <div class="catalogs__card card">
-            <h3 class="card__title subtitle">Набор массы</h3>
-            <p class="card__text text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="card__button" href="catalog.html">
-              каталог pro
-              <svg class="card__button-img" aria-label="Стрелка." width="24" height="12">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </a>
+            <div class="card__text-wrapper">
+              <h3 class="card__title subtitle">Набор массы</h3>
+              <p class="card__text text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="card__button" href="catalog.html">
+                каталог pro
+                <svg class="card__button-img" aria-label="Стрелка." width="24" height="12">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
             <svg class="card__img card__img--beefy" aria-label="Упитанный кот." width="67" height="50">
               <use xlink:href="img/sprite.svg#cat-beefy"></use>
             </svg>

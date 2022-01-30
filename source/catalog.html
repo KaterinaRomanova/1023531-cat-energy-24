@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="imag/favicons/apple.png">
-    <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header class="header">
@@ -51,8 +51,8 @@
               <div class="product__card">
                 <a class="product__link-img" href="#">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/catalog/catalog-1-desktop.png  1x, img/catalog/catalog-1-desktop@2x.png  2x">
-                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png  1x, img/catalog/catalog-1-tablet@2x.png  2x">
+                    <source media="(min-width: 1440px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png 1x, img/catalog/catalog-1-tablet@2x.png 2x">
                     <img class="product__img" src="img/catalog/catalog-1-mobile.png" srcset="img/catalog/catalog-1-mobile@2x.png 2x" alt="Корм Cat Energy pro с курицей." width="140" height="112">
                   </picture>
                 </a>
@@ -279,8 +279,11 @@
         </div>
       </section>
       <section class="additional-catalog">
-        <div class="wrapper">
+        <div class="additional-catalog__title-wrapper">
           <h2 class="additional-catalog__title subtitle">Дополнительные товары</h2>
+        </div>
+
+        <div class="wrapper">
           <div class="additional-catalog__layout">
             <ul class="additional-catalog__list">
               <li class="additional-catalog__item additional-product">

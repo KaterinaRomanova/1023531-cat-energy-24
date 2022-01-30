@@ -76,6 +76,10 @@
     flex-wrap: wrap;
     justify-content: right;
   }
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
+  }
 }
 
 .navigation__item {
@@ -133,7 +137,11 @@
     font-size: 20px;
     line-height: 30px;
 
-    &--current-white {
+    &--white {
+      color: $basic-white-color;
+    }
+
+    &--white.navigation__link--current {
       border-bottom: 2px solid $basic-white-color;
     }
   }

@@ -88,25 +88,39 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="program-form__group contact-group">
-          <legend class="program-form__legend subtitle">Контактные данные (владельца кота)</legend>
+        <fieldset class="program-form__group program-form__group--contact">
+          <div class="program-form__legend-wrapper">
+            <legend class="program-form__legend program-form__legend--contact subtitle">Контактные данные (владельца кота)</legend>
+          </div>
           <div class="program-form__contact-wrapper">
             <div class="program-form__input-group">
               <label class="program-form__text" for="email">E-mail:*</label>
               <input class="program-form__input program-form__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="program-form__input-icon" role="img" aria-label="Символ письма." width="20" height="15">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
             </div>
             <div class="program-form__input-group">
               <label class="program-form__text" for="phone">Телефон:*</label>
               <input class="program-form__input program-form__input--tel" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+              <svg class="program-form__input-icon" role="img" aria-label="Символ звонка." width="20" height="21">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
             </div>
           </div>
         </fieldset>
         <fieldset class="program-form__group program-form__group--textarea">
-          <legend class="program-form__legend subtitle">Комментарий</legend>
-          <textarea class="program-form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="program-form__legend-wrapper">
+            <legend class="program-form__legend subtitle">Комментарий</legend>
+          </div>
+          <div class="program-form__textarea-wrapper">
+            <textarea class="program-form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
-        <fieldset class="program-form__group">
-          <legend class="program-form__legend subtitle">Дополнительно</legend>
+        <fieldset class="program-form__group program-form__group--additional">
+          <div class="program-form__legend-wrapper">
+            <legend class="program-form__legend program-form__legend--additional subtitle">Дополнительно</legend>
+          </div>
           <ul class="program-form__list-checkbox">
             <li class="program-form__item">
               <label class="control">
@@ -154,8 +168,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button program-form__button" type="submit">отправить заявку</button>
-        <small class="program-form__note">* — Обязательные поля</small>
+        <div class="program-form__button-wrapper">
+          <button class="button program-form__button" type="submit">отправить заявку</button>
+          <small class="program-form__note">* — Обязательные поля</small>
+        </div>
       </form>
     </main>
     <footer class="footer">
@@ -185,21 +201,21 @@
           <ul class="socials">
             <li class="socials__item">
               <a class="socials__link" href="https://vk.com/htmlacademy">
-                <svg class="socials__img" aria-label="Вконтакте." width="23" height="16">
+                <svg class="socials__img socials__img--vkontakte" aria-label="Вконтакте." width="23" height="16">
                   <use xlink:href="img/sprite.svg#vkontacte"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.instagram.com/htmlacademy">
-                <svg class="socials__img" aria-label="Инстаграм." width="16" height="16">
+                <svg class="socials__img socials__img--instagram" aria-label="Инстаграм." width="16" height="16">
                   <use xlink:href="img/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link" href="https://www.facebook.com/htmlacademy">
-                <svg class="socials__img" aria-label="Фейсбук." width="22" height="22">
+                <svg class="socials__img socials__img--facebook" aria-label="Фейсбук." width="22" height="22">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
               </a>

@@ -30,7 +30,28 @@
     color: $basic-black-color;
 
     &::before {
-      background: none;
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      min-height: 696px;
+      top: 0;
+      right: 0;
+      background-image: url("http://placehold.it/200x200");
+      background-color: #63a73a;
+      background-position: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    &--top {
+      padding-top: 200px;
     }
   }
 }
@@ -72,6 +93,12 @@
     margin-bottom: 0;
     width: 708px;
     height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 552px;
+    height: 499px;
   }
 }
 

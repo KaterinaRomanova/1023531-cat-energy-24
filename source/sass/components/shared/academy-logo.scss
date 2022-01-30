@@ -3,6 +3,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: $academy-logo-color;
+
+  &:hover .academy-logo__img {
+    color: $basic-elements-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .academy-logo__text {

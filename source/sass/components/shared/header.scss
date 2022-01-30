@@ -1,5 +1,10 @@
-.header {
-
+.header--absolute {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
 }
 
 .header__wrapper {
