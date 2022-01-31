@@ -1,15 +1,15 @@
 .catalog-title {
-  padding: 27px 20px 39px;
+  padding: 27px 20px 40px;
   color: $basic-black-color;
   border-top: 1px solid  $border-card-color;
 
   @media (min-width: $tablet-width) {
-    padding: 34px 30px 82px;
+    padding: 49px 30px 61px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 126px 84px;
+    padding: 56px 126px 77px;
     max-width: 1220px;
     margin: auto;
   }

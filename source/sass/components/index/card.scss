@@ -6,6 +6,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 52px 53px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -77,14 +79,32 @@
 
 .card__img {
   position: absolute;
-}
 
-.card__img--beefy {
-  top: 24px;
-  left: 13px;
-}
+  &--beefy {
+    top: 24px;
+    left: 13px;
+  }
 
-.card__img--slim {
-  top: 20px;
-  left: 22px;
+  &--slim {
+    top: 20px;
+    left: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &--beefy {
+      width: 268px;
+      height: 200px;
+    }
+
+    &--slim {
+      width: 200px;
+      height: 211px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }

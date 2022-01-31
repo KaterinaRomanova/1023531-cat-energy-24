@@ -67,6 +67,13 @@
   position: absolute;
   top: 6px;
   left: 5px;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 7px;
+    width: 24px;
+    height: 19px;
+  }
 }
 
 .control__input[type="checkbox"]:checked ~ .control__mark .control__mark-svg {

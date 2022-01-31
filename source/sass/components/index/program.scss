@@ -6,6 +6,11 @@
   background: url("./../img/background-mobile.png") no-repeat center 0;
   background-size: 100% 301px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("./../img/background-mobile@2x.png");
+    background-size: 100% 301px;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -19,12 +24,38 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 33px;
+    margin-bottom: 0;
+    padding-top: 47px;
     background: none;
     color: $basic-black-color;
 
     &::before {
-      background: none;
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      min-height: 694px;
+      top: 0;
+      right: 0;
+      background-image: url("../../../img/index/background-desktop.jpg");
+      background-color: $basic-elements-color;
+      background-position: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/index/background-desktop@2x.jpg");
+      }
+    }
+
+    &--top {
+      padding-top: 200px;
     }
   }
 }
@@ -52,7 +83,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin: 0 89px 20px;
+    margin: 0 89px 16px;
     text-align: left;
   }
 }
@@ -61,13 +92,25 @@
   display: block;
   margin: auto;
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 708px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .program__button {
   @media (min-width: $tablet-width) {
     display: inline-block;
     position: absolute;
-    top: 263px;
+    top: 231px;
     left: 120px;
   }
 }

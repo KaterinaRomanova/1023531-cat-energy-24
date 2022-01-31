@@ -17,19 +17,27 @@
     width: 324px;
     min-height: 511px;
     border: none;
-    background: linear-gradient(transparent 81px, $basic-gray-color 81px);
+    background: linear-gradient(transparent 102px, $basic-gray-color 102px);
 
     &--additional {
+      margin-top: 103px;
       min-height: 430px;
-      margin-top: 81px;
       background: transparent;
       border: 2px solid $basic-gray-color;
+      padding: 50px 38px 38px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding: 8px 37px 39px 39px;
     width: 245px;
+    background: linear-gradient(transparent 87px, #f2f2f2 87px);
+
+    &--additional {
+      padding: 49px 37px 38px;
+      margin-top: 87px;
+      background: transparent;
+    }
   }
 }
 
@@ -50,13 +58,46 @@
 }
 
 .product__link-img {
+  margin-bottom: 0;
+
   &--additional {
     margin-bottom: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+
+    &--additional {
+      margin-bottom: 45px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+
+    &--additional {
+      margin-bottom: 46px;
+    }
   }
 }
 
 .product__img {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
 
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.product__img-plus {
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .product__description {
@@ -82,11 +123,12 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
     width: 144px;
   }
 
   @media (min-width: $desktop-width) {
-
+    margin-bottom: 25px;
   }
 }
 
@@ -100,12 +142,17 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
     text-align: center;
+
+    &--additional {
+      line-height: 22px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-
+    font-size: 20px;
+    line-height: 21px;
   }
 }
 
@@ -177,4 +224,15 @@
   font-size: 12px;
   line-height: 16px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }

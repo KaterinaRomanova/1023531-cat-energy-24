@@ -1,11 +1,16 @@
-.header {
-
+.header--absolute {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 10px auto 17px;
+  margin: 10px auto 12px;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
@@ -31,18 +36,31 @@
     opacity: 0.6;
   }
 
-
   @media (min-width: $desktop-width) {
-    margin-top: 48px;
+    margin-top: 5px;
+    width: auto;
   }
-}
-
-.header__logo-img{
-
 }
 
 .header__logo-text {
   margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__logo-img {
+  @media (min-width: $tablet-width) {
+    margin-top: 3px;
+    width: 175px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
 }
 
 .header__navigation{

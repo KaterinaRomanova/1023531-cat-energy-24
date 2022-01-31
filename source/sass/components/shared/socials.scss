@@ -1,7 +1,7 @@
 .socials {
   margin: 0;
   margin-bottom: 14px;
-  padding: 20px 77px 15px 73px;
+  padding: 17px 73px 15px 70px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -9,8 +9,9 @@
   border-top: 1px solid $border-card-color;
 
   @media (min-width: $tablet-width) {
+    padding: 20px 41px 11px 70px;
     border: none;
-    gap: 28px;
+    gap: 21px;
   }
 
   @media (min-width: $tablet-width) {
@@ -18,15 +19,39 @@
   }
 }
 
-.socials__item {
-
-
-}
-
 .socials__link {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  &:hover .socials__img {
+    color: $basic-elements-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .socials__img {
+  color: $academy-logo-color;
 
+  @media (min-width: $tablet-width) {
+    &--vkontakte {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--facebook {
+      width: 28px;
+      height: 28px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+  }
 }
