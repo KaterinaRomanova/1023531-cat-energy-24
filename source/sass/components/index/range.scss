@@ -22,6 +22,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 9px 0 14px;
     border-bottom: 1px dotted transparentize($basic-black-color, 0.3);
     font-size: 20px;
     line-height: 30px;

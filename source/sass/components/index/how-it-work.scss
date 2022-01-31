@@ -3,9 +3,13 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $border-menu-color;
+    padding-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: auto;
+    padding: 0;
+    max-width: 1220px;
     border: none;
   }
 }
@@ -13,6 +17,15 @@
 .how-it-work__title {
   margin-bottom: 41px;
   padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 41px;
+  }
 }
 
 .how-it-work__list {
@@ -24,12 +37,12 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 153px;
+    gap: 37px 58px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 94px;
+    gap: 5px;
   }
 }
 
@@ -39,7 +52,8 @@
   flex-direction: row;
 
   @media (min-width: $tablet-width) {
-    min-width: 246px;
+    padding-right: 70px;
+    min-width: 250px;
     min-height: 280px;
     flex-direction: column;
   }
@@ -56,9 +70,6 @@
     width: 80px;
     height: 80px;
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .how-it-work__text {
@@ -69,7 +80,7 @@
 .how-it-work__number {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -38px;
   z-index: -1;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 280px;
@@ -79,9 +90,17 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    right: 73px;
     display: block;
+
+    :nth-child(1) {
+      right: 96px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    :first-child {
+      right: 96px;
+    }
   }
 }

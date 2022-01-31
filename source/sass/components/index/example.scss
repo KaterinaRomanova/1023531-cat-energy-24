@@ -3,17 +3,23 @@
   background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 40px;
-    background: linear-gradient(transparent 462px, $bg-color 462px);
+    padding: 45px 0 17px;
+    background: linear-gradient(transparent 619px, #eaeaea 619px);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(transparent 180px, $bg-color 180px);
+    padding: 29px 0 24px;
+    background: linear-gradient(transparent 165px, #eaeaea 165px);
   }
 }
 
 .example__wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
   }
@@ -66,6 +72,7 @@
   margin: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
@@ -188,14 +195,22 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -54px;
+  }
 }
 
 .example__img-wrapper {
+  margin: auto;
   margin-bottom: 5px;
+  width: 280px;
+  height: 237px;
   position: relative;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
     width: 588px;
     height: 511px;
   }
@@ -213,13 +228,25 @@
 }
 
 .example__slide {
-  width: 296px;
-  height: 511px;
-  overflow: hidden;
+  width: 280px;
+  height: 237px;
 
   &--right {
+    display: none;
     position: absolute;
-    left: 296px;
     top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+    height: 511px;
+    overflow: hidden;
+
+    &--right {
+      position: absolute;
+      left: 296px;
+      top: 0;
+      display: block;
+    }
   }
 }
