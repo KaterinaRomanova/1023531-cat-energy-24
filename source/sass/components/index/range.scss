@@ -16,6 +16,11 @@
     border-bottom: 1px solid transparentize($basic-black-color, 0.3);
   }
 
+  &:active {
+    padding-bottom: 1px;
+    border: none;
+  }
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px dotted transparentize($basic-black-color, 0.3);
     font-size: 20px;
@@ -23,18 +28,94 @@
   }
 }
 
-.range__scale {
-  padding: 0 12px;
+.range__wrapper {
+  padding: 12px;
 }
 
 .range__bar {
-
+  position: relative;
 }
 
 .range__toggle {
+  top: -13px;
+  right: 194px;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  border: 1px solid $range-color;
+  border-radius: 50%;
+  background-color: $basic-white-color;
+  filter: drop-shadow(0 1px 3px transparentize($basic-black-color, 0.84));
+  cursor: pointer;
 
+  &::before {
+    content: "";
+    top: 12px;
+    left: 12px;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $basic-elements-color;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px transparentize($basic-black-color, 0.49));
+  }
+
+  &:active {
+    border: 1px solid $basic-elements-color;
+    filter: drop-shadow(0 3px 5px transparentize($basic-black-color, 0.8));
+  }
 }
 
-.range__toggle_min {
+.range__scale {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+  width: 426px;
+  height: 6px;
+  background-color: $range-color;
+  opacity: 0.6;
+  border-radius: 6px;
+}
 
+.range__input-wrapper {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.range__input {
+  &:checked + .range__label {
+    &::before {
+      top: 4px;
+      left: 42px;
+    }
+  }
+}
+
+.range__label {
+  display: flex;
+  width: 85px;
+  height: 14px;
+  border: 1px solid $special-line-color;
+  border-radius: 6px;
+  background: $basic-white-color;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    transition: transform 0.75s ease;
+    transition-delay: 0.5s;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 6px;
+    background-color: $basic-elements-color;
+    border-radius: 6px;
+    top: 4px;
+    left: 7px;
+  }
 }

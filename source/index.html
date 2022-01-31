@@ -148,16 +148,32 @@
           </div>
           <div class="example__img-info">
             <div class="example__img-wrapper">
-              <img class="example__img" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот." width="280" height="232">
-              <img class="example__img display-none" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Худой кот." width="243" height="232">
+              <div class="example__slide">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/index/cat-fat.png 1x, img/index/cat-fat@2x.png 2x" width="677" height="520px">
+                  <img class="example__img" src="img/index/cat-fat-mobile.png" srcset="img/index/cat-fat-mobile@2x.png 2x" alt="Толстый кот." width="280" height="232">
+                </picture>
+              </div>
+              <div class="example__slide example__slide--right">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/index/cat-skinny.png 1x, img/index/cat-skinny@2x.png 2x" width="545" height="520px">
+                  <img class="example__img example__img--right" src="img/index/cat-skinny-mobile.png" srcset="img/index/cat-skinny-mobile@2x.png 2x" alt="Худой кот." width="243" height="232">
+                </picture>
+              </div>
             </div>
             <div class="example__range range">
               <button class="range__button" type="button">Было</button>
-              <div class="range__scale">
-                <div class="range__bar" style="left: 0; width: 85px;">
-                  <button class="range__toggle range__toggle_min" type="button">
-                    <span class="visually-hidden">Посмотреть до/после</span>
-                  </button>
+              <div class="range__wrapper">
+                <div class="range__input-wrapper">
+                  <input class="range__input visually-hidden" type="checkbox" id="toggle"/>
+                  <label class="range__label" for="toggle"></label>
+                </div>
+                <div class="range__scale">
+                  <div class="range__bar">
+                    <button class="range__toggle" type="button">
+                      <span class="visually-hidden">Посмотреть до/после</span>
+                    </button>
+                  </div>
                 </div>
               </div>
               <button class="range__button" type="button">Стало</button>

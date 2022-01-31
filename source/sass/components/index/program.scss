@@ -39,15 +39,19 @@
       content: "";
       position: absolute;
       width: 50%;
-      min-height: 696px;
+      min-height: 694px;
       top: 0;
       right: 0;
-      background-image: url("http://placehold.it/200x200");
-      background-color: #63a73a;
+      background-image: url("../../../img/index/background-desktop.jpg");
+      background-color: $basic-elements-color;
       background-position: 0;
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/index/background-desktop@2x.jpg");
+      }
     }
 
     &--top {

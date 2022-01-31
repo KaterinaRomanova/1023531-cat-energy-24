@@ -1,5 +1,5 @@
 .example {
-  padding: 27px 0 40px;
+  padding: 27px 0 35px;
   background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
@@ -183,18 +183,43 @@
 }
 
 .example__img-info {
-
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .example__img-wrapper {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
+  position: relative;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 588px;
+    height: 511px;
+  }
 }
 
 .example__img {
+  @media (min-width: $tablet-width) {
+    height: 511px;
 
+    &--right {
+      position: absolute;
+      right: 0;
+    }
+  }
 }
 
-.example__range {
+.example__slide {
+  width: 296px;
+  height: 511px;
+  overflow: hidden;
 
+  &--right {
+    position: absolute;
+    left: 296px;
+    top: 0;
+  }
 }
