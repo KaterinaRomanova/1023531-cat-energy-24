@@ -56,18 +56,6 @@
     min-width: 250px;
     min-height: 280px;
     flex-direction: column;
-
-    // :nth-child(1) {
-    //   width: 230px;
-    // }
-
-    // :nth-child(2) {
-    //   width: 246px;
-    // }
-
-    // :nth-child(3) {
-    //   width: 247px;
-    // }
   }
 }
 
@@ -81,9 +69,6 @@
     margin-bottom: 30px;
     width: 80px;
     height: 80px;
-  }
-
-  @media (min-width: $desktop-width) {
   }
 }
 
