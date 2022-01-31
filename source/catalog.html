@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -401,19 +401,6 @@
         </div>
       </section>
     </footer>
-
-    <script>
-      const nav = document.querySelector('.navigation');
-      const navToggle = document.querySelector('.navigation__toggle');
-      navToggle.addEventListener('click', function(){
-        if(nav.classList.contains('navigation--closed')){
-          nav.classList.remove('navigation--closed');
-          nav.classList.add('navigation--opened');
-        }else{
-          nav.classList.remove('navigation--opened');
-          nav.classList.add('navigation--closed');
-        }
-      })
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

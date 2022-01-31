@@ -1,15 +1,7 @@
-.catalogs {
-
-}
-
 .catalogs__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
-
-.catalogs__card {
-
 }
