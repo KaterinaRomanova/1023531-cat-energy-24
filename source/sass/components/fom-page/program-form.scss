@@ -371,7 +371,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 69px 69px;
+    margin: 0 69px -10px;
     grid-template-columns: repeat(2, 1fr);
     gap: 61px;
   }

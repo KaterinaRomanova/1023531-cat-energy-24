@@ -210,6 +210,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     margin-bottom: 41px;
     width: 588px;
     height: 511px;
@@ -218,9 +219,12 @@
 
 .example__img {
   @media (min-width: $tablet-width) {
-    height: 511px;
+    height: 520px;
+    width: 677px;
 
     &--right {
+      width: 545px;
+      height: 520px;
       position: absolute;
       right: 0;
     }
