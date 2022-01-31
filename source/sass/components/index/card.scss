@@ -5,12 +5,15 @@
   background-color: $basic-gray-color;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 53px;
+    padding: 77px 52px 52px;
     display: flex;
     justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 77px 52px 54px;
     width: 466px;
   }
 }
@@ -22,11 +25,17 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 530px;
+    margin-left: 163px;
+    margin-bottom: 74px;
   }
+}
+
+.card__text-wrapper {
+  flex: 1 0;
 }
 
 .card__text {
@@ -36,13 +45,18 @@
   border-bottom: 1px solid $border-card-color;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    min-height: 148px;
+    margin-bottom: 1px;
   }
+}
+
+.card__button-img--long {
+  display: none;
 }
 
 .card__button {
@@ -52,6 +66,19 @@
   display: block;
   color: $text-dark-color;
   text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .card__button-img {
+    transition-duration: 5ms;
+    display: none;
+  }
+
+  &:hover .card__button-img--long {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 4px 55px 4px 0;
@@ -90,21 +117,35 @@
     left: 22px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-finish) {
     position: relative;
 
     &--beefy {
+      margin: -10px -9px 0 0;
       width: 268px;
       height: 200px;
     }
 
     &--slim {
+      margin: -17px 32px 0;
       width: 200px;
       height: 211px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    &--beefy {
+      top: 47px;
+      left: 33px;
+      width: 134px;
+      height: 100px;
+    }
 
+    &--slim {
+      top: 41px;
+      left: 52px;
+      width: 100px;
+      height: 106px;
+    }
   }
 }
