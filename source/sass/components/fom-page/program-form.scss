@@ -2,15 +2,6 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.1;
-
-  @media (min-width: $tablet-width) {
-    // padding: 0 69px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // margin: auto;
-    // max-width: 1216px;
-  }
 }
 
 .program-form__title {
@@ -199,9 +190,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  @media (min-width: $desktop-width) {
-  }
 }
 
 .program-form__input {
@@ -383,7 +371,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 69px 69px;
+    margin: 0 69px -10px;
     grid-template-columns: repeat(2, 1fr);
     gap: 61px;
   }

@@ -51,10 +51,6 @@
     flex-direction: column;
     align-items: center;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .product__link-img {
@@ -175,10 +171,6 @@
     border-bottom: 1px solid $special-line-color;
     font-size: 16px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .product__feature {
@@ -211,10 +203,6 @@
   @media (min-width: $tablet-width) {
     padding: 10px 26px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .product__text {
@@ -230,9 +218,5 @@
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
