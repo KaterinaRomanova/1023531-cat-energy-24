@@ -63,6 +63,11 @@
   }
 }
 
+.map__container {
+  background: url("../../../img/map.png") no-repeat;
+  background-size: cover;
+}
+
 .map__frame {
   width: 100%;
   border: 0;

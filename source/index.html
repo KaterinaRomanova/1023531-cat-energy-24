@@ -9,6 +9,10 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="imag/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
   </head>
   <body>
     <header class="header header--absolute">
@@ -48,6 +52,9 @@
           <h2 class="program__title title">Функциональное питание для котов</h2>
           <p class="program__text">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index/main-food-desktop.webp 1x, img/index/main-food-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index/main-food-tablet.webp 1x, img/index/main-food-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index/main-food-tablet.webp 1x, img/index/main-food-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/index/main-food-desktop.png 1x, img/index/main-food-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/index/main-food-tablet.png 1x, img/index/main-food-tablet@2x.png 2x">
             <img class="program__img" src="img/index/main-food-mobile.png" srcset="img/index/main-food-mobile@2x.png 2x" alt="Упаковка корма." width="280" height="270">
@@ -156,12 +163,16 @@
             <div class="example__img-wrapper">
               <div class="example__slide">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/index/cat-fat.webp 1x, img/index/cat-fat@2x.webp 2x">
+                  <source type="image/webp" srcset="img/index/cat-fat-mobile.webp 1x, img/index/cat-fat-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/index/cat-fat.png 1x, img/index/cat-fat@2x.png 2x">
                   <img class="example__img" src="img/index/cat-fat-mobile.png" srcset="img/index/cat-fat-mobile@2x.png 2x" alt="Толстый кот." width="280" height="232">
                 </picture>
               </div>
               <div class="example__slide example__slide--right">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/index/cat-skinny.webp 1x, img/index/cat-skinny@2x.webp 2x">
+                  <source type="image/webp" srcset="img/index/cat-skinny-mobile.webp 1x, img/index/cat-skinny-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/index/cat-skinny.png 1x, img/index/cat-skinny@2x.png 2x">
                   <img class="example__img example__img--right" src="img/index/cat-skinny-mobile.png" srcset="img/index/cat-skinny-mobile@2x.png 2x" alt="Худой кот." width="243" height="232">
                 </picture>
@@ -200,7 +211,7 @@
             </address>
           </div>
         </div>
-        <div class="map__container map-container">
+        <div class="map__container">
           <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.178313520637!2d30.318355330736388!3d59.93895923556141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a5bee693c3%3A0xd7c6e88d473ce8f1!2sABRAMOV!5e0!3m2!1sru!2sby!4v1638817731386!5m2!1sru!2sby" height="362"  allowfullscreen="" loading="lazy" title=""></iframe>
         </div>
       </section>

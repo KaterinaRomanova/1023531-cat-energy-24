@@ -81,7 +81,7 @@ export const svg = () => {
 export const copy = (done) => {
   return gulp.src([
     'source/img/sprite.svg',
-    'source/fonts/*.{woff, woff2}',
+    'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest'
   ],{

@@ -9,6 +9,10 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="imag/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
   </head>
   <body>
     <header class="header">
@@ -47,7 +51,7 @@
         <p class="program-form__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <div class="program-form__group-wrapper">
           <fieldset class="program-form__group">
-            <legend class="visually-hidden">Личные данные</legend>
+            <h2 class="visually-hidden">Личные данные</h2>
             <div class="program-form__input-group">
               <label class="program-form__text" for="name">Имя:*</label>
               <input class="program-form__input" type="text" name="name" id="name" placeholder="Барсик" required>
@@ -62,7 +66,7 @@
             </div>
           </fieldset>
           <fieldset class="program-form__group program-form__group--bordered">
-            <legend class="visually-hidden">Вид программы</legend>
+            <h2 class="visually-hidden">Вид программы</h2>
             <ul class="program-form__list-radio">
               <li class="program-form__item">
                 <label class="control">
@@ -89,8 +93,8 @@
           </fieldset>
         </div>
         <fieldset class="program-form__group program-form__group--contact">
-          <div class="program-form__legend-wrapper">
-            <legend class="program-form__legend program-form__legend--contact subtitle">Контактные данные (владельца кота)</legend>
+          <div class="program-form__header-wrapper">
+            <h2 class="program-form__header program-form__header--contact subtitle">Контактные данные (владельца кота)</h2>
           </div>
           <div class="program-form__contact-wrapper">
             <div class="program-form__input-group">
@@ -110,16 +114,16 @@
           </div>
         </fieldset>
         <fieldset class="program-form__group program-form__group--textarea">
-          <div class="program-form__legend-wrapper">
-            <legend class="program-form__legend subtitle">Комментарий</legend>
+          <div class="program-form__header-wrapper">
+            <h2 class="program-form__header subtitle">Комментарий</h2>
           </div>
           <div class="program-form__textarea-wrapper">
             <textarea class="program-form__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="program-form__group program-form__group--additional">
-          <div class="program-form__legend-wrapper">
-            <legend class="program-form__legend program-form__legend--additional subtitle">Дополнительно</legend>
+          <div class="program-form__header-wrapper">
+            <h2 class="program-form__header program-form__header--additional subtitle">Дополнительно</h2>
           </div>
           <ul class="program-form__list-checkbox">
             <li class="program-form__item">

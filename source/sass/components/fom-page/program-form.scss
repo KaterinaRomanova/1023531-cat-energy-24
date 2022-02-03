@@ -222,11 +222,11 @@
     color: $basic-elements-color;
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     outline: 2px solid $status-error-color;
   }
 
-  &:invalid ~ .program-form__input-icon {
+  &:invalid:not(:placeholder-shown) ~ .program-form__input-icon {
     color: $status-error-color;
   }
 
@@ -289,13 +289,13 @@
   }
 }
 
-.program-form__legend-wrapper {
+.program-form__header-wrapper {
   margin: 0 auto;
   margin-bottom: 37px;
   max-width: 1292px;
 }
 
-.program-form__legend {
+.program-form__header {
   margin-left: -20px;
   padding: 0 20px;
   width: fit-content;
